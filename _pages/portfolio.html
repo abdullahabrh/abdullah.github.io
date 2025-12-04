@@ -1,14 +1,90 @@
----
-layout: archive
-title: "Portfolio"
-permalink: /portfolio/
-author_profile: true
----
+<!-- ===================== PROJECTS ===================== -->
+<h2 class="section-title">PROJECTS</h2>
 
-{% include base_path %}
+<div class="entry">
+    <div class="entry-title">DATA ANALYSIS & BUSINESS ANALYTICS — MULTI-CITY BUSINESS & PERMITTING DATA INTEGRATION</div>
+    <div class="entry-sub">Python, SQL (DuckDB) — Introduction to Data Science: Working with Data</div>
+    <ul>
+        <li>Developed a full end-to-end analytical workflow using ~70,000 real government records from Chicago (business licenses, CSV) and New York City (building permits, JSON).</li>
+        <li>Loaded, cleaned, transformed, and validated both datasets using Python (pandas), addressing missing values, inconsistent types, multi-record license histories, and nested JSON structures.</li>
+        <li>Normalized complex JSON fields, converted timestamps, geospatial fields, and string-encoded numeric values into analysis-ready columns.</li>
+        <li>Designed and implemented a documented integration strategy for two unrelated municipal datasets with different schemas and regulatory processes.</li>
+        <li>Performed analytical queries with DuckDB SQL, including ward-level business activity mapping (Chicago), borough-level construction intensity (NYC), regulatory timeline analysis, and cross-city geographic comparisons.</li>
+        <li>Generated insights relevant for policy analysis, regulatory monitoring, business intelligence, and urban economic development.</li>
+    </ul>
+</div>
 
+<div class="entry">
+    <div class="entry-title">CAUSAL INFERENCE & POLICY EVALUATION — RANDOMIZED TRIALS, IV, MATCHING & DIFFERENCE-IN-DIFFERENCES</div>
+    <div class="entry-sub">Stata — Regression Analysis & Causal Inference: DA4</div>
+    <ul>
+        <li>Estimated causal effects using randomized controlled trials, instrumental variables, matching estimators, and difference-in-differences models across multiple real-world datasets.</li>
+        <li>Analyzed the National JTPA randomized job-training experiment: estimated intention-to-treat and treatment-on-the-treated effects using OLS and Wald IV; interpreted first-stage, reduced-form, and compliance structures.</li>
+        <li>Evaluated treatment heterogeneity by gender and contrasted OLS vs. IV estimates to identify selection and compliance-driven biases.</li>
+        <li>Measured the impact of a workers’ compensation policy reform using a DiD model; tested robustness using demographic and industry controls.</li>
+        <li>Estimated the effect of maternal smoking on birthweight using regression and matching; assessed control-variable validity using causal reasoning and backdoor-path logic.</li>
+        <li>Derived ATE, ATET, and selection bias in potential-outcomes frameworks to understand when conditioning introduces bias.</li>
+    </ul>
+</div>
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
+<div class="entry">
+    <div class="entry-title">REGRESSION MODELING & PREDICTION — MULTIPLE REGRESSION, INTERACTIONS & NONLINEAR MODELS</div>
+    <div class="entry-sub">Stata — Data Analysis 2: Finding Patterns with Regressions</div>
+    <ul>
+        <li>Implemented multiple linear regressions, interaction models, and nonlinear specifications across labour-market, demographic, and hotel-pricing datasets.</li>
+        <li>Estimated gender earnings gaps in computer-science and market-research occupations using level and log-earnings regressions with robust standard errors.</li>
+        <li>Added household-composition controls and interaction terms to quantify how the gender gap differs between parents and non-parents.</li>
+        <li>Analyzed the relationship between life expectancy and economic development across continents using separate and interacted log-GDP models.</li>
+        <li>Modeled hotel pricing using linear, log-level, log-log, and quadratic specifications; interpreted elasticities, semi-elasticities, and nonlinear pricing patterns.</li>
+        <li>Compared linear probability, logit, and probit models when predicting high hotel ratings and firm-level management quality; assessed predicted probabilities and marginal effects.</li>
+        <li>Conducted hypothesis testing and confidence-interval analysis, including t-tests, significance thresholds, and p-value interpretation.</li>
+    </ul>
+</div>
+
+<div class="entry">
+    <div class="entry-title">TRADING &amp; PORTFOLIO THEORY — RISK, RETURN, OPTIMAL PORTFOLIOS &amp; ALPHA</div>
+    <div class="entry-sub">Trading &amp; Portfolio Theory · CEU · Excel · Solver · Real-time Trading</div>
+    <ul>
+        <li>Analyzed financial assets and market data using Excel, applying core portfolio-theory concepts including mean–variance optimization, diversification, and the risk–return trade-off.</li>
+        <li>Constructed monthly return series for SPY (equities), BND (bonds), and GLD (gold); computed excess returns using the 3-month T-bill rate; derived volatilities, covariances, correlations, and Sharpe ratios.</li>
+        <li>Built and solved a full mean–variance optimal portfolio using Excel Solver, identified the tangency portfolio, traced the Capital Allocation Line (CAL), and compared efficient-frontier positions across investor risk profiles.</li>
+        <li>Converted optimal portfolio weights into ETF holdings for a hypothetical USD 100,000 allocation, demonstrating practical money-management and risk-budgeting skills.</li>
+        <li>Evaluated equilibrium asset-pricing models:
+            <ul>
+                <li>Single-index model and the CAPM (beta estimation, SML, expected return).</li>
+                <li>Fama–French multi-factor models and factor-based performance attribution.</li>
+                <li>Alpha measurement, factor loadings, and practical limitations of performance evaluation.</li>
+            </ul>
+        </li>
+        <li>Interpreted portfolio performance metrics (Sharpe, Treynor, Jensen’s alpha), tested market-efficiency concepts, and discussed behavioral-finance biases.</li>
+        <li>Participated in real-time trading simulations using StockTrak: executed market/limit orders, placed margin trades and short sales, and documented trading rationales.</li>
+        <li>Performed portfolio diagnostics using historical data: return decomposition, regression-based beta estimation, factor exposure identification, and CAPM-based alpha testing.</li>
+    </ul>
+</div>
+
+<div class="entry">
+    <div class="entry-title">ECONOMIC FORECASTING &amp; MACRO-FINANCIAL ANALYSIS</div>
+    <div class="entry-sub">Theory &amp; Practice of Economic Forecasting · CEU · EViews</div>
+    <ul>
+        <li>Worked with quarterly Austrian macroeconomic time series (real GDP, inflation, unemployment, sentiment indices) in EViews; performed data cleaning, seasonal adjustment, and transformation to growth rates.</li>
+        <li>Applied moving-average filters and the Hodrick–Prescott (HP) filter to decompose series into trend and cycle; estimated potential output and the output gap and evaluated Austria’s business-cycle position.</li>
+        <li>Built ARIMA/ARMA, VAR, and indicator-based “bridge” forecasting models combining hard data with sentiment and confidence indicators.</li>
+        <li>Used cross-correlations, lead/lag analysis, and Granger-causality tests to classify indicators as leading, coincident, or lagging and to assess their value for nowcasting.</li>
+        <li>Generated out-of-sample forecasts and assessed predictive accuracy using RMSE, MAE, Theil’s U, and direction-of-change metrics.</li>
+        <li>Interpreted results from a macro-financial policy perspective, linking nowcasting indicators to monetary and fiscal policy considerations.</li>
+    </ul>
+</div>
+
+<div class="entry">
+    <div class="entry-title">AWS CLOUD & SERVERLESS AI — EC2 DEPLOYMENT, NLP PIPELINE, NEWS SENTIMENT ANALYSIS</div>
+    <div class="entry-sub">Data Engineering 1: Cloud Computing & Managed AI Solutions · AWS · Python · GitHub Codespaces</div>
+    <ul>
+        <li>Provisioned and configured an Ubuntu EC2 t4g.nano instance, created Security Groups for SSH/HTTP, and deployed applications remotely using GitHub Codespaces and SSH key pairs.</li>
+        <li>Set up a public DNS endpoint using Route 53 and performed resource cleanup to minimize cloud costs.</li>
+        <li>Built a serverless NLP pipeline to compare political news sentiment across languages using AWS Comprehend, Translate, and S3 for storage and processing.</li>
+        <li>Scraped English and non-English news articles, translated content programmatically with AWS Translate, and ran sentiment and entity-level analysis with AWS Comprehend.</li>
+        <li>Used AWS Transcribe to convert YouTube news videos to text and integrated the transcripts into the sentiment-analysis workflow.</li>
+        <li>Delivered the full project as a reproducible GitHub repository, including Python scripts, API integrations, charts, and a cost breakdown of AWS services used.</li>
+    </ul>
+</div>
 
